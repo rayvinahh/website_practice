@@ -1,0 +1,69 @@
+/*
+h1 {
+     color:rgb(4, 143, 143);
+}
+
+h2 {
+    color:limegreen;
+}
+
+h3 {
+    color:royalblue;
+}
+
+.pictures{
+    height: 100px;
+    width: 100px;
+}*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "navbar navbar navbar"
+        "slideshow slideshow slideshow"
+        "side-image information information"
+        "academic sports arts"
+        "footer footer footer";
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: #40A3A0;
+}
+
+.slideshow{
+    grid-area: slideshow;
+    background-color: #1263A6;
+}
+
+.side-image{
+    grid-area: side-image;
+    background-color: #84919C;
+}
+
+.information{
+    grid-area: information;
+    background-color: #7756D1;
+}
+
+.academic{
+    grid-area: academic;
+    background-color: #A02AB5;
+}
+
+.sports{
+    grid-area: sports;
+    background-color: #270E96;
+}
+
+.arts{
+    grid-area: arts;
+    background-color: #00FF33;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #FF009D;
+}
